@@ -22,41 +22,37 @@ Client::~Client() {
     remove("player_2.action_board.json");
 }
 
-    //Done
 void Client::initialize(unsigned int player, unsigned int board_size){
-
+    // Initializing variables
     this->player = player;
     this->board_size = board_size;
-    board_name = "player_" + to_string(Client::player);
+    board_name = "player_" + to_string(player);
     string outFile = board_name + ".action_board.json";
 
-
+    // Creates 2d vector for storage
     std::vector<std::vector<int> > board(this->board_size, std::vector<int>(this->board_size));
 
-    ofstream array_ofp(outFile); // create an output file stream
-    cereal::JSONOutputArchive write_archive(array_ofp); // initialize an archive on the file
-    write_archive(CEREAL_NVP(board)); // serialize the data giving it a name
+    //Writes to 2d vector for action board
+    ofstream array_ofp(outFile);
+    cereal::JSONOutputArchive write_archive(array_ofp);
+    write_archive(CEREAL_NVP(board));
 
     initialized = true;
 
 }
 
-    //Done
 void Client::fire(unsigned int x, unsigned int y) {
 
     string file = board_name +".shot.json";
 
+    //Writes shot to shot file
     ofstream outFile(file);
     cereal::JSONOutputArchive write_archive(outFile);
     write_archive(CEREAL_NVP(x), CEREAL_NVP(y));
-    //write_archive.finishNode();
-    //outFile.close();
-
-    cout << "Shot fired at: (" + to_string(x) + "," + to_string(y) + ")\n";
 
 }
 
-    //Done
+
 bool Client::result_available() {
     string fname = board_name + ".result.json";
     ifstream f(fname.c_str());
@@ -65,12 +61,13 @@ bool Client::result_available() {
     }
 }
 
-    //Done
+
 int Client::get_result() {
     string file = board_name + ".result.json";
     int result;
-    ifstream array_ifp(file); // create an input file stream
-    cereal::JSONInputArchive read_archive(array_ifp); // initialize an archive on the file
+    // Reads result file
+    ifstream array_ifp(file);
+    cereal::JSONInputArchive read_archive(array_ifp);
     read_archive(result);
     array_ifp.close();
 
@@ -91,36 +88,53 @@ int Client::get_result() {
     }
 }
 
-    //Done
 void Client::update_action_board(int result, unsigned int x, unsigned int y) {
     string file = board_name + ".action_board.json";
 
+    //2d vector to store action board
     std::vector<std::vector<int> > matrix(this->board_size, std::vector<int>(this->board_size));
 
-    ifstream array_ifp(file); // create an input file stream
-    cereal::JSONInputArchive read_archive(array_ifp); // initialize an archive on the file
+    //Writes to action board
+    ifstream array_ifp(file);
+    cereal::JSONInputArchive read_archive(array_ifp);
     read_archive(matrix);
     array_ifp.close();
 
+    //Changes value of shot location
     matrix[x][y] = result;
 
+    //writes new action board back to file
     ofstream array_ofp(file); // create an output file stream
     cereal::JSONOutputArchive write_archive(array_ofp); // initialize an archive on the file
     write_archive(cereal::make_nvp("board", matrix)); // serialize the data giving it a name
 
 }
 
-/* Missing:
- * Formats a string representing player_#.action_board.json as ASCII
- */
+
 string Client::render_action_board(){
     string file = board_name + ".action_board.json";
-    /*
-    string output;
+    string output = "";
 
+    //2d vector to store action board
+    std::vector<std::vector<int> > matrix(this->board_size, std::vector<int>(this->board_size));
+
+    // reads action board
     ifstream outFile(file);
     cereal::JSONInputArchive read_archive(outFile); // initialize an archive on the file
-    read_archive(output);
+    read_archive(matrix);
     outFile.close();
-    */
+
+    // Saves action board to string
+    for(int i = 0; i < board_size; i++){
+        for(int j = 0; j < board_size; j++){
+            if(matrix[i][j] == 0){
+                output = output + "_";
+            }
+            else {
+                output = output + to_string(matrix[i][j]);
+            }
+        }
+        output = output + "\n";
+    }
+    return output;
 }

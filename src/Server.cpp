@@ -38,11 +38,12 @@ void Server::initialize(unsigned int board_size,
                         string p1_setup_board,
                         string p2_setup_board){
 
+    //Initializes variables
     this->p1_setup_board.open(p1_setup_board);
     this->p2_setup_board.open(p2_setup_board);
     this->board_size = board_size;
 
-
+    // checks board size for p1 board
     int bSize = board_size;
     int size = (get_file_length(&this->p1_setup_board) - (bSize));
     bSize = bSize * bSize;
@@ -50,6 +51,7 @@ void Server::initialize(unsigned int board_size,
         throw "Correct_Board_Size 1 Exception";
     }
 
+    //checks board size for p2 board
     int bSize2 = board_size;
     int size2 = (get_file_length(&this->p2_setup_board) - (bSize2));
     bSize2 = bSize2 * bSize2;
@@ -57,9 +59,12 @@ void Server::initialize(unsigned int board_size,
         throw "Correct_Board_Size 2 Exception";
     }
 
+    // checks for wrong board size
     if(board_size <= 0){
         throw "Wrong_Board_Size Exception";
     }
+
+    // checks for bad file name
     if(p1_setup_board == "" || p2_setup_board == ""){
         throw "Bad_File_Name Exception";
     }
@@ -67,23 +72,25 @@ void Server::initialize(unsigned int board_size,
 
 
 int Server::evaluate_shot(unsigned int player, unsigned int x, unsigned int y) {
-    //Bad Player Number
+    //checks for Bad Player Number
     if (player > MAX_PLAYERS || player <= 0 ){
         throw "Bad_Player_Number Exception";
     }
-    //Out of Bounds x and y
+
+    //checks for Out of Bounds x and y
     if(x >= board_size || x < 0){
         return OUT_OF_BOUNDS;
     }
     if(y >= board_size || y < 0){
         return OUT_OF_BOUNDS;
     }
+    //checks for boundary size
     if(x <= board_size-1 && y <= board_size-1){
     }
     else{
         throw "Max_Bounds Exception";
     }
-
+    //checks for out of bounds
     if(x >= board_size){
         return OUT_OF_BOUNDS;
     }
@@ -126,27 +133,35 @@ int Server::evaluate_shot(unsigned int player, unsigned int x, unsigned int y) {
 int Server::process_shot(unsigned int player) {
     string file_name1 = "player_" + to_string(player) + ".shot.json";
     string file_name2 = "player_" + to_string(player) + ".result.json";
+
+    //checks if shot file exists
+    ifstream i(file_name1.c_str());
+    if (!i){
+        return NO_SHOT_FILE;
+    }
     unsigned int x = 2, y = 2;
     int result = 2;
 
-
-
-
-    ifstream inFile(file_name1); // create an input file stream
-    cereal::JSONInputArchive read_inFile(inFile); // initialize an archive on the file
+    // reads shot file
+    ifstream inFile(file_name1);
+    cereal::JSONInputArchive read_inFile(inFile);
     read_inFile(x,y);
     inFile.close();
 
-
+    // removes shot file
     remove("player_1.shot.json");
     remove("player_2.shot.json");
 
+    // evaluates shot coordinates
     result = evaluate_shot(player, x, y);
 
-
+    // writes to result file
     ofstream outFile(file_name2);
     cereal::JSONOutputArchive write_archive(outFile);
     write_archive(CEREAL_NVP(result));
-
+    ifstream f(file_name2.c_str());
+    if (f){
+        return SHOT_FILE_PROCESSED;
+    }
     return NO_SHOT_FILE;
 }

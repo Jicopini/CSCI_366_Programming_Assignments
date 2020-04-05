@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Battleship" targetName="run_server" />
+      <config projectName="Battleship" targetName="gmock_main" />
+      <config projectName="Battleship" targetName="gtest" />
+      <config projectName="Battleship" targetName="SERVER" />
+      <config projectName="Battleship" targetName="run_client" />
+      <config projectName="Battleship" targetName="battleship_tests" />
+      <config projectName="Battleship" targetName="gtest_main" />
+      <config projectName="Battleship" targetName="CLIENT" />
+      <config projectName="Battleship" targetName="gmock" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e86f4d5-149c-450c-8952-604dedb2980d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YzOyo8AiL3aOuCRRhPLbnWT6lV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="CMake Application.run_client">
+    <configuration name="ServerEvaluateShot" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="battleship_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="battleship_tests" TEST_CLASS="ServerEvaluateShot" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerEvaluateShot.Hit_Detected" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="battleship_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="battleship_tests" TEST_CLASS="ServerEvaluateShot" TEST_METHOD="Hit_Detected" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerEvaluateShot.Out_Of_Bounds_X" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="battleship_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="battleship_tests" TEST_CLASS="ServerEvaluateShot" TEST_METHOD="Out_Of_Bounds_X" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerProcessShot.Hit_Detected" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="battleship_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="battleship_tests" TEST_CLASS="ServerProcessShot" TEST_METHOD="Hit_Detected" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerProcessShot.Miss_Detected" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="battleship_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="battleship_tests" TEST_CLASS="ServerProcessShot" TEST_METHOD="Miss_Detected" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CLIENT" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="CLIENT" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SERVER" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="SERVER" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="battleship_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="battleship_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="battleship_tests">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_client" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="run_client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="run_client">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_server" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="run_server" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="run_server">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="CMake Application.CLIENT" />
+      <item itemvalue="CMake Application.run_client" />
+      <item itemvalue="CMake Application.run_server" />
+      <item itemvalue="CMake Application.SERVER" />
+      <item itemvalue="CMake Application.battleship_tests" />
+      <item itemvalue="Google Test.ServerEvaluateShot" />
+      <item itemvalue="Google Test.ServerEvaluateShot.Out_Of_Bounds_X" />
+      <item itemvalue="Google Test.ServerEvaluateShot.Hit_Detected" />
+      <item itemvalue="Google Test.ServerProcessShot.Miss_Detected" />
+      <item itemvalue="Google Test.ServerProcessShot.Hit_Detected" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.ServerProcessShot.Hit_Detected" />
+        <item itemvalue="Google Test.ServerProcessShot.Miss_Detected" />
+        <item itemvalue="Google Test.ServerEvaluateShot.Hit_Detected" />
+        <item itemvalue="Google Test.ServerEvaluateShot.Out_Of_Bounds_X" />
+        <item itemvalue="Google Test.ServerEvaluateShot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e86f4d5-149c-450c-8952-604dedb2980d" name="Default Changelist" comment="" />
+      <created>1583942214312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583942214312</updated>
+      <workItem from="1583942231535" duration="66000" />
+      <workItem from="1583943008242" duration="36454000" />
+      <workItem from="1584982656998" duration="268000" />
+      <workItem from="1584983015342" duration="239000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583957210241">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="96" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.813@0.0.1280.813" timestamp="1583957210241" />
+    <state x="93" y="93" width="1095" height="628" key="DiffContextDialog" timestamp="1583963624081">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="93" y="93" width="1095" height="628" key="DiffContextDialog/0.0.1280.813@0.0.1280.813" timestamp="1583963624081" />
+    <state x="421" y="165" key="FileChooserDialogImpl" timestamp="1583945877258">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="421" y="165" key="FileChooserDialogImpl/0.0.1280.813@0.0.1280.813" timestamp="1583945877258" />
+    <state width="1237" height="207" key="GridCell.Tab.0.bottom" timestamp="1584114480230">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.0.bottom/0.0.1280.813@0.0.1280.813" timestamp="1584114480230" />
+    <state width="1237" height="207" key="GridCell.Tab.0.center" timestamp="1584114480229">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.0.center/0.0.1280.813@0.0.1280.813" timestamp="1584114480229" />
+    <state width="1237" height="207" key="GridCell.Tab.0.left" timestamp="1584114480229">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.0.left/0.0.1280.813@0.0.1280.813" timestamp="1584114480229" />
+    <state width="1237" height="207" key="GridCell.Tab.0.right" timestamp="1584114480229">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state width="1237" height="207" key="GridCell.Tab.0.right/0.0.1280.813@0.0.1280.813" timestamp="1584114480229" />
+    <state width="1237" height="257" key="GridCell.Tab.1.bottom" timestamp="1584114480149">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state width="1237" height="257" key="GridCell.Tab.1.bottom/0.0.1280.813@0.0.1280.813" timestamp="1584114480149" />
+    <state width="1237" height="257" key="GridCell.Tab.1.center" timestamp="1584114480149">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state width="1237" height="257" key="GridCell.Tab.1.center/0.0.1280.813@0.0.1280.813" timestamp="1584114480149" />
+    <state width="1237" height="257" key="GridCell.Tab.1.left" timestamp="1584114480149">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state width="1237" height="257" key="GridCell.Tab.1.left/0.0.1280.813@0.0.1280.813" timestamp="1584114480149" />
+    <state width="1237" height="257" key="GridCell.Tab.1.right" timestamp="1584114480149">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state width="1237" height="257" key="GridCell.Tab.1.right/0.0.1280.813@0.0.1280.813" timestamp="1584114480149" />
+    <state x="144" y="53" key="SettingsEditor" timestamp="1584982942122">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="144" y="53" key="SettingsEditor/0.0.1280.813@0.0.1280.813" timestamp="1584982942122" />
+    <state x="349" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1584983055269">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="349" y="235" key="com.intellij.ide.util.TipDialog/0.0.1280.813@0.0.1280.813" timestamp="1584983055269" />
+    <state x="323" y="90" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583946706877">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="323" y="90" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.813@0.0.1280.813" timestamp="1583946706877" />
+    <state x="303" y="134" width="672" height="678" key="search.everywhere.popup" timestamp="1584045686702">
+      <screen x="0" y="0" width="1280" height="813" />
+    </state>
+    <state x="303" y="134" width="672" height="678" key="search.everywhere.popup/0.0.1280.813@0.0.1280.813" timestamp="1584045686702" />
+  </component>
+</project>
